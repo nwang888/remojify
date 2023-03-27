@@ -16,5 +16,5 @@ for item in data:
         top_emojis.append(hex_value)
 
 # Write the hex values for ranks 1 to 150 to a new JSON file
-with open('data/top_emojis.json', 'w') as f:
+with open('top_emojis.json', 'w') as f:
     json.dump(top_emojis, f)
