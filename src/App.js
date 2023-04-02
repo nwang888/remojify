@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import emojisList from "src/top_emojis.json";
+import emojisList from "./top_emojis.json";
 
 function App() {
+	const [emojis, setEmojis] = useState([]);
 	const [currentEmoji, setCurrentEmoji] = useState([]);
 	const [description, setDescription] = useState("");
 
