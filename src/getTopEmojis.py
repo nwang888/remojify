@@ -11,9 +11,9 @@ top_emojis = []
 for item in data:
     rank = item['Rank']
     if int(rank) <= 150:  # Only process ranks 1 to 150
-        hex_value = item['Hex']
+        emoji_value = item['Emoji']
         # Add the hex value to the list for this rank
-        top_emojis.append(hex_value)
+        top_emojis.append(emoji_value)
 
 # Write the hex values for ranks 1 to 150 to a new JSON file
 with open('top_emojis.json', 'w') as f:
