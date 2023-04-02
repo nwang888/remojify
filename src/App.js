@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import emojisList from "./top_emojis.json";
-import EmojiList from "./EmojiList";
 
 function App() {
 	const [emojis, setEmojis] = useState([]);
@@ -56,7 +55,6 @@ function App() {
 						{currentEmoji}
 					</span>
 				</div>
-				{/* <EmojiList codes={emojis} /> */}
 				<input
 					type="text"
 					value={description}
